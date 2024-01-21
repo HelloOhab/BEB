@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto py-4">
+      <h1 class="text-6xl font-bold text-center">
+        Let's Get some Money
+      </h1>
+    </header>
+
+    <section class="mx-auto bg-gray-400 py-14">
+        <div class="container mx-auto">
+            <div class="flex gap-5 justify-center">
+                <div class="bg-green-400 p-10 rounded-md w-1/3">
+                    <h4 class="text-3xl">Depot</h4>
+                    <h2 class="text-4xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-orange-400 p-10 rounded-md w-1/3">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="text-4xl">$ <span id="withdraw-amount">00</span></h2>
+                </div>
+                <div class="bg-purple-300 p-10 rounded-md w-1/3">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-4xl">$<span id="Balance-total">100</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-14">
+        <div class="flex gap-5 justify-center">
+            <div class="bg-indigo-900 p-10 rounded-md w-2/4">
+                <h4 class="text-3xl text-gray-50 mb-2">Please Depot</h4>
+                <input class="w-10/12 block p-2" type="text" name="" id="amount-deposit" placeholder="Amount you want to deposit">
+                <input id="btn-deposit" class="block mt-4 bg-red-400 px-6 py-2 text-white uppercase font-bold cursor-pointer" type="button" value="Deposit">
+            </div>
+            <div class="bg-lime-400 p-10 rounded-md w-3/6">
+                <h4 class="text-3xl mb-2">Please Withdraw</h4>
+                <input class="w-10/12 block p-2" type="text" name="" id="bebwithdraw-amount" placeholder="Amount you want to Withdraw">
+                <input id="btn-withdraw" class="block mt-4 bg-red-400 px-6 py-2 text-white uppercase font-bold cursor-pointer" type="button" value="Withdraw">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<script src="js/depost.js"></script>
+<script src="js/withdraw.js"></script>
+</body>
+</html>
